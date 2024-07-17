@@ -4,21 +4,22 @@ import { MdEmail } from "react-icons/md";
 import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 
 const baseSiteConfig = {
-  name: "Clean Next.js Starter",
+  name: "Welcome to Wzeddie Blog",
   description:
-    "Clean Next.js Starter is a meticulously designed Next.js starter template aimed at providing developers with a clean, efficient, and scalable foundation for quickly launching.",
-  url: "https://starter.weijunext.com",
-  ogImage: "https://starter.weijunext.com/og.png",
+    "Explore the Wzeddie Blog for insightful articles, tips, and stories on a variety of topics including technology, lifestyle, and personal development. Join our community and stay updated with the latest trends and ideas.",
+  url: "https://wzeddie.online",
+  // og是社交媒体上可展示的图片，
+  ogImage: "https://wzeddie.online/og.png",
   metadataBase: '/',
-  keywords: ["next.js starter", "next.js template", "awesome starter", "study next.js"],
+  keywords: ["Wzeddie Blog, Wzeddie, Blog, Wzeddie articles, Wzeddie posts, Wzeddie updates, Wzeddie news, Wzeddie insights, Wzeddie stories, Wzeddie content"],
   authors: [
     {
-      name: "weijunext",
-      url: "https://weijunext.com",
-      twitter: 'https://twitter.com/weijunext',
+      name: "wzeddie",
+      url: "https://wzeddie.online",
+      twitter: 'https://twitter.com/wzeddie',
     }
   ],
-  creator: '@weijunext',
+  creator: '@wzeddie',
   themeColors: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
@@ -29,11 +30,14 @@ const baseSiteConfig = {
     shortcut: "/logo.png",
     apple: "/logo.png", // apple-touch-icon.png
   },
+  // Header 上的外链信息
+
   headerLinks: [
     { name: 'repo', href: "https://github.com/weijunext/clean-nextjs-starter", icon: BsGithub },
     { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
     { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
   ],
+  //// Footer 上的联系信息
   footerLinks: [
     { name: 'email', href: "mailto:weijunext@gmail.com", icon: MdEmail },
     { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
@@ -42,6 +46,7 @@ const baseSiteConfig = {
     { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },
     { name: 'weChat', href: "https://weijunext.com/make-a-friend", icon: BsWechat }
   ],
+  // Footer 上的个人产品链接
   footerProducts: [
     { url: 'https://weijunext.com/', name: 'J实验室' },
     { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
@@ -52,7 +57,8 @@ const baseSiteConfig = {
     { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
   ]
 }
-
+// 配置了 openGraph 和 twitter，当用户在社交媒体和消息应用程序上
+// 分享指向你的网站时，链接会显示你在配置的图像。
 export const siteConfig: SiteConfig = {
   ...baseSiteConfig,
   openGraph: {
