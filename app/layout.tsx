@@ -1,10 +1,11 @@
 import BaiDuAnalytics from "@/app/BaiDuAnalytics";
 import GoogleAnalytics from "@/app/GoogleAnalytics";
-import Footer from "@/components/footer/Footer";
-import Header from "@/components/header/Header";
 import { TailwindIndicator } from "@/components/TailwindIndicator";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
 import { siteConfig } from "@/config/site";
+import { defaultLocale } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import "@/styles/globals.css";
 import "@/styles/loading.css";
@@ -34,11 +35,13 @@ export const viewport: Viewport = {
 
 export default async function RootLayout({
   children,
+  params: { lang },
 }: {
   children: React.ReactNode;
+  params: { lang: string[] | undefined };
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={(lang && lang[0]) || defaultLocale} suppressHydrationWarning>
       <head />
       <body
         className={cn(
@@ -48,7 +51,7 @@ export default async function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme={siteConfig.defaultNextTheme}
+          defaultTheme={siteConfig.nextThemeColor}
           enableSystem
         >
           <Header />

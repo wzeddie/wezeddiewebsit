@@ -1,23 +1,25 @@
 🌍 *[英文](README.md) ∙ [简体中文](README-zh.md)*
 
-# [Clean Next.js Starter](https://starter.weijunext.com/)
+# [Landing page boilerplate](https://landingpage.weijunext.com/)
 
-Clean Next.js Starter 是一个精心设计的 Next.js 启动模板，旨在为开发者提供一个干净、高效、可扩展的基础，以便快速启动项目。
+这是一个通用的落地页模板，适合各种项目和营销活动。 
 
-演示地址：https://starter.weijunext.com
+演示地址：https://landingpage.weijunext.com
 
-[![Clean Next.js Starter](./public/og.png)](https://www.starter.weijunext.com/)
+文章: 
+[我为独立开发者开发落地页模板（一）](https://juejin.cn/post/7344567650457010191)  
+[我为独立开发者开发落地页模板（二）](https://juejin.cn/post/7350200488455520267)
 
-**更多功能正在开发中，目标是在今年完成启动器的全面开发。**
+[![Landing page boilerplate](./public/og.png)](https://landingpage.weijunext.com/)
+
 
 ## 技术栈
 
-Clean Next.js Starter 基于以下技术栈构建：
+Landing page boilerplate 基于以下技术栈构建：
 
 - Next.js – 前端
 - TailwindCSS – 样式
-- Shadcn – UI
-- Google Analytics - 分析（[如何使用？](https://weijunext.com/article/979b9033-188c-4d88-bfff-6cf74d28420d)）
+- Google Analytics
 - Vercel - 托管
 
 
@@ -34,19 +36,21 @@ npm run dev
 ## 创建你的项目
 
 修改以下文件：
-- `.env` 或 `.env.local`
-- `config/site.ts`, 填写你的网站信息 
+- `.env` or `.env.example`
+- `config/site.ts`, 填写你的网站信息
 - `public`, 修改 logo 文件
 - `public/robots.txt`
-- `app/sitemap.ts`
-
 
 
 ## 一键部署
 
-使用 [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples) 部署：
+使用 Vercel 或 Zeabur 部署：
 
-[![使用 Vercel 部署](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/weijunext/clean-nextjs-starter&project-name=&repository-name=clean-nextjs-starter&demo-title=CleanNextjsStarter&demo-description=Clean%20nextjs%20starter.&demo-url=https://starter.weijunext.com&demo-image=https://starter.weijunext.com/og.png)
+[![使用 Vercel 部署](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/weijunext/landing-page-boilerplate&project-name=&repository-name=landing-page-boilerplate&demo-title=LandingPageBoilerplate&demo-description=Landing%20page%20boilerplate.&demo-url=https://landingpage.weijunext.com&demo-image=https://landingpage.weijunext.com/og.png)
+
+
+
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/D92G1L)
 
 ## 关于我
 
@@ -61,6 +65,7 @@ npm run dev
 [掘金](https://juejin.cn/user/26044008768029)  
 [知乎](https://www.zhihu.com/people/mo-mo-mo-89-12-11)  
 [微信交流群](https://weijunext.com/make-a-friend)  
+
 
 如果这个项目对您有帮助，请给仓库点个star，能赞助一下就更好了👇
 

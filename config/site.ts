@@ -3,41 +3,40 @@ import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 
+const OPEN_SOURCE_URL = 'https://github.com/weijunext/landing-page-boilerplate'
+
 const baseSiteConfig = {
-  name: "Welcome to Wzeddie Blog",
+  name: "Landing page boilerplate",
   description:
-    "Explore the Wzeddie Blog for insightful articles, tips, and stories on a variety of topics including technology, lifestyle, and personal development. Join our community and stay updated with the latest trends and ideas.",
-  url: "https://wzeddie.online",
-  // og是社交媒体上可展示的图片，
-  ogImage: "https://wzeddie.online/og.png",
+    "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
+  url: "https://landingpage.weijunext.com",
+  ogImage: "https://landingpage.weijunext.com/og.png",
   metadataBase: '/',
-  keywords: ["Wzeddie Blog, Wzeddie, Blog, Wzeddie articles, Wzeddie posts, Wzeddie updates, Wzeddie news, Wzeddie insights, Wzeddie stories, Wzeddie content"],
+  keywords: ["landing page boilerplate", "landing page template", "awesome landing page", "next.js landing page"],
   authors: [
     {
-      name: "wzeddie",
-      url: "https://wzeddie.online",
-      twitter: 'https://twitter.com/wzeddie',
+      name: "weijunext",
+      url: "https://weijunext.com",
+      twitter: 'https://twitter.com/weijunext',
     }
   ],
-  creator: '@wzeddie',
+  creator: '@weijunext',
+  openSourceURL: 'https://github.com/weijunext/landing-page-boilerplate',
   themeColors: [
     { media: '(prefers-color-scheme: light)', color: 'white' },
     { media: '(prefers-color-scheme: dark)', color: 'black' },
   ],
-  defaultNextTheme: 'system', // next-theme option: system | dark | light
+  nextThemeColor: 'dark', // next-theme option: system | dark | light
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/logo.png",
-    apple: "/logo.png", // apple-touch-icon.png
+    shortcut: "/favicon-16x16.png",
+    apple: "/logo.png",
   },
-  // Header 上的外链信息
-
   headerLinks: [
-    { name: 'repo', href: "https://github.com/weijunext/clean-nextjs-starter", icon: BsGithub },
+    { name: 'repo', href: OPEN_SOURCE_URL, icon: BsGithub },
     { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
     { name: 'buyMeCoffee', href: "https://www.buymeacoffee.com/weijunext", icon: SiBuymeacoffee }
   ],
-  //// Footer 上的联系信息
   footerLinks: [
     { name: 'email', href: "mailto:weijunext@gmail.com", icon: MdEmail },
     { name: 'twitter', href: "https://twitter.com/weijunext", icon: BsTwitterX },
@@ -46,7 +45,6 @@ const baseSiteConfig = {
     { name: 'juejin', href: "https://juejin.cn/user/26044008768029", icon: SiJuejin },
     { name: 'weChat', href: "https://weijunext.com/make-a-friend", icon: BsWechat }
   ],
-  // Footer 上的个人产品链接
   footerProducts: [
     { url: 'https://weijunext.com/', name: 'J实验室' },
     { url: 'https://smartexcel.cc/', name: 'Smart Excel' },
@@ -57,8 +55,7 @@ const baseSiteConfig = {
     { url: 'https://github.com/weijunext/indie-hacker-tools', name: 'Indie Hacker Tools' },
   ]
 }
-// 配置了 openGraph 和 twitter，当用户在社交媒体和消息应用程序上
-// 分享指向你的网站时，链接会显示你在配置的图像。
+
 export const siteConfig: SiteConfig = {
   ...baseSiteConfig,
   openGraph: {
@@ -68,7 +65,6 @@ export const siteConfig: SiteConfig = {
     title: baseSiteConfig.name,
     description: baseSiteConfig.description,
     siteName: baseSiteConfig.name,
-    images: [`${baseSiteConfig.url}/og.png`],
   },
   twitter: {
     card: "summary_large_image",

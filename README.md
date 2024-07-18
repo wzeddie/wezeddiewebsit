@@ -1,34 +1,27 @@
-# v1.0.0项目初始化
-git tag v1.0.0 -m "项目初始化"
-git push origin :refs/tags/v1.0.0     //删除远程上的老标签
-git tag -d v1.0.0      //删除本地标签
-git push origin v1.0.0       //推送标签
-
-# v1.0.1
-配置网站信息
-
 🌍 *[English](README.md) ∙ [简体中文](README-zh.md)*
 
 
-# [Clean Next.js Starter](https://starter.weijunext.com/)
+# [Landing page boilerplate](https://landingpage.weijunext.com/)
 
-Clean Next.js Starter is a meticulously designed Next.js starter template aimed at providing developers with a clean, efficient, and scalable foundation for quickly launching.
+A versatile landing page boilerplate, ideal for various projects and marketing campaigns.
 
-Demo address：https://starter.weijunext.com
+Demo address：https://landingpage.weijunext.com
 
-**More features are in development, aiming to complete the full development of the starter this year.**
+Blog: 
+[我为独立开发者开发落地页模板（一）](https://juejin.cn/post/7344567650457010191)  
+[我为独立开发者开发落地页模板（二）](https://juejin.cn/post/7350200488455520267)
 
-[![Clean Next.js Starter](./public/og.png)](https://www.starter.weijunext.com/)
+[![Landing page boilerplate](./public/og.png)](https://landingpage.weijunext.com/)
 
 ## Tech Stack 
 
-Clean Next.js Starter is built on the following stack:
+Landing page boilerplate is built on the following stack:
 
 - Next.js – Frontend/Backend
 - TailwindCSS – Styles
-- Shadcn – UI
-- Google Analytics - Analytics([How to use?](https://weijunext.com/article/979b9033-188c-4d88-bfff-6cf74d28420d))
+- Google Analytics
 - Vercel - Hosting
+
 
 
 ## Running Locally
@@ -45,18 +38,20 @@ npm run dev
 
 Edit these files:
 - `.env` or `.env.local`
-- `config/site.ts`, fill in your website information 
+- `config/site.ts`, fill in your website information.
 - `public`, change logo file
 - `public/robots.txt`
 - `app/sitemap.ts`
-s
+
 
 
 ## One-Click Deploy
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+Deploy the example using Vercel or Zeabur:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/weijunext/clean-nextjs-starter&project-name=&repository-name=clean-nextjs-starter&demo-title=CleanNextjsStarter&demo-description=Clean%20nextjs%20starter.&demo-url=https://starter.weijunext.com&demo-image=https://starter.weijunext.com/og.png)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/weijunext/landing-page-boilerplate&project-name=&repository-name=landing-page-boilerplate&demo-title=LandingPageBoilerplate&demo-description=Landing%20page%20boilerplate.&demo-url=https://landingpage.weijunext.com&demo-image=https://landingpage.weijunext.com/og.png)
+
+[![Deploy on Zeabur](https://zeabur.com/button.svg)](https://zeabur.com/templates/D92G1L)
 
 ## About Me
 

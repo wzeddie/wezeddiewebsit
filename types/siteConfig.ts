@@ -25,13 +25,14 @@ export type SiteConfig = {
   keywords: string[]
   authors: AuthorsConfig[]
   creator: string
+  openSourceURL?: string
   ogImage: string
   headerLinks: Link[]
   footerLinks: Link[],
   footerProducts: ProductLink[]
   metadataBase: URL | string
   themeColors?: string | ThemeColor[]
-  defaultNextTheme?: string
+  nextThemeColor?: string
   icons: {
     icon: string
     shortcut?: string
