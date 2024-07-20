@@ -1,6 +1,9 @@
 # v1.0.0项目初始化
 git checkout v1.0.0先切户到最干净版本
 git checkout -b pricetest 创建一个新的分支，用于熟练next.js的布局修改。
+pricetest，还没想好，过来做什么。
+1、先熟悉现有的框架
+包括如何引入scdui的组件
 
 
 🌍 *[English](README.md) ∙ [简体中文](README-zh.md)*
