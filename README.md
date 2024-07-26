@@ -1,17 +1,19 @@
 # v1.0.0项目初始化
 git checkout v1.0.0先切户到最干净版本
 git checkout -b pricetest 创建一个新的分支，用于熟练next.js的布局修改。
-pricetest，还没想好，过来做什么。
+testforlogin
+这是一个现成的落地页面，代码来源自clean-nextjs-starter
 1、先熟悉现有的框架
 包括如何引入scdui的组件
-创建Oauth用户
+2、引入登录需求
+创建Oauth用户：参考文档https://weijunext.com/article/nextjs-auth-postgres-prisma-login
 
 Client ID
 Ov23ctc94R3TgQkHTgiu
 Client secrets
 You need a client secret to authenticate as the application to the API.
 
-
+考虑到这个项目首页比较复杂，先去另一个简单的网站部署登录需求。
 
 🌍 *[English](README.md) ∙ [简体中文](README-zh.md)*
 
