@@ -4,6 +4,13 @@ git checkout -b pricetest 创建一个新的分支，用于熟练next.js的布�
 pricetest，还没想好，过来做什么。
 1、先熟悉现有的框架
 包括如何引入scdui的组件
+创建Oauth用户
+
+Client ID
+Ov23ctc94R3TgQkHTgiu
+Client secrets
+You need a client secret to authenticate as the application to the API.
+
 
 
 🌍 *[English](README.md) ∙ [简体中文](README-zh.md)*
